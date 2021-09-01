@@ -13,11 +13,15 @@ const api = async (req: NextApiRequest, res: NextApiResponse) => {
   const verified =
     account.toLowerCase() ==
     utils.verifyMessage(SIGNATURE_TEXT, signature).toLowerCase();
+
+  console.log(verified);
   if (verified) {
     const bags = await getBagsInWallet(account.toLowerCase());
     const filteredBags = bags.filter(bag =>
-      bag.chest.toLowerCase().includes('divine robe')
+      bag.chest.toLowerCase().includes('book')
     );
+    console.log(bags);
+    console.log(filteredBags);
     if (filteredBags.length > 0) {
       let [user] = await prisma.user.findMany({
         where: { address: account.toLowerCase() }
@@ -28,8 +32,8 @@ const api = async (req: NextApiRequest, res: NextApiResponse) => {
         });
       }
       return res.redirect(getLoginURL(user.id));
-    } else return res.redirect('/unauthorized');
-  } else return res.redirect('/unauthorized');
+    } //else return res.redirect('/unauthorized');
+  } //else return res.redirect('/unauthorized');
 };
 
 export default api;

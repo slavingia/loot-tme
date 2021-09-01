@@ -7,7 +7,7 @@
   "main": "",
   "dependencies": {
     "@gimmixorg/use-wallet": "^0.0.25",
-    "@prisma/client": "2.30.0",
+    "@prisma/client": "2.10.1",
     "@walletconnect/web3-provider": "^1.6.5",
     "dayjs": "^1.10.6",
     "ethers": "^5.4.6",
@@ -15,9 +15,11 @@
     "next": "^11.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "transform": "^1.1.2",
     "zustand": "^3.5.10"
   },
   "devDependencies": {
+    "@prisma/cli": "2.10.1",
     "@types/node": "^16.7.6",
     "@types/react": "^17.0.19",
     "prisma": "2.30.0",

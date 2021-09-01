@@ -5,11 +5,11 @@ const IndexPage = () => {
   return (
     <div className="index">
       <Head>
-        <title>Divine Roles</title>
+        <title>Loot - TME</title>
       </Head>
-      <h1>Divine Roles</h1>
+      <h1>Loot - TME</h1>
       <div className="message">
-        Sorry, there's a dress code. (Divine Robe wearers only)
+        Sorry, book owners only.
       </div>
       <style jsx>{`
         .index {

@@ -5,9 +5,9 @@ const IndexPage = () => {
   return (
     <div className="index">
       <Head>
-        <title>Divine Roles</title>
+        <title>Loot - TME</title>
       </Head>
-      <h1>Divine Roles</h1>
+      <h1>Loot - TME</h1>
       <div className="message">
         Welcome. You have been added to the Discord.
       </div>

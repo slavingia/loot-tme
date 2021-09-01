@@ -15,10 +15,10 @@ const IndexPage = () => {
   return (
     <div className="index">
       <Head>
-        <title>Divine Roles</title>
+        <title>Loot - TME</title>
       </Head>
-      <h1>Divine Roles</h1>
-      <div className="message">You must have Divine Robes to enter.</div>
+      <h1>Loot - TME</h1>
+      <div className="message">You must own a book to gain access to TME.</div>
       {!account ? (
         <button
           onClick={() =>
@@ -38,12 +38,12 @@ const IndexPage = () => {
           Connect Wallet
         </button>
       ) : (
-        <button onClick={verifyAndJoin}>Verify your Divine Role</button>
+        <button onClick={verifyAndJoin}>Verify your book ownership</button>
       )}
 
       <div className="links">
-        <a href="https://robes.market/" target="_blank">
-          Find Divine Robes for sale and check prices at robes.market.
+        <a href="https://opensea.io/collection/lootproject?collectionSlug=lootproject&search[sortAscending]=true&search[sortBy]=PRICE" target="_blank">
+          Find books for sale and check prices on OpenSea.
         </a>
       </div>
       <style jsx>{`

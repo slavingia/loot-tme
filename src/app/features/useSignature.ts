@@ -2,7 +2,7 @@ import { useWallet } from '@gimmixorg/use-wallet';
 import getSignature from './getSignature';
 import { useStore } from './useStore';
 
-export const SIGNATURE_TEXT = 'Click Sign to verify your Divine Role.';
+export const SIGNATURE_TEXT = 'Click Sign to verify your book ownership.';
 
 const useSignature = () => {
   const { provider, account } = useWallet();
