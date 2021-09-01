@@ -49,6 +49,7 @@ export const addToServer = async (userID: string, accessToken: string) => {
   const body = {
     access_token: accessToken
   };
+  console.log(body);
   await fetch(
     `https://discord.com/api/v8/guilds/${
       process.env.DISCORD_SERVER_ID as string
@@ -62,6 +63,7 @@ export const addToServer = async (userID: string, accessToken: string) => {
       }
     }
   ).then(res => {
+    console.log(res);
     if (res.status == 201) return res.json();
     else return res.text();
   });
