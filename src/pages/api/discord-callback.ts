@@ -21,7 +21,7 @@ const api = async (req: NextApiRequest, res: NextApiResponse) => {
   // reconfirm user has permissions
   const bags = await getBagsInWallet(user.address.toLowerCase());
   const filteredBags = bags.filter(bag =>
-    bag.chest.toLowerCase().includes('book')
+    bag.weapon.toLowerCase().includes('book')
   );
   if (!filteredBags.length) return res.redirect('/unauthorized');
 
