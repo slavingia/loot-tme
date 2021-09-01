@@ -3382,7 +3382,7 @@
   "resolved" "https://registry.npmjs.org/precond/-/precond-0.2.3.tgz"
   "version" "0.2.3"
 
-"prisma@*", "prisma@2.30.0":
+"prisma@*", "prisma@^2.30.0":
   "integrity" "sha512-2XYpSibcVpMd1JDxYypGDU/JKq0W2f/HI1itdddr4Pfg+q6qxt/ItWKcftv4/lqN6u/BVlQ2gDzXVEjpHeO5kQ=="
   "resolved" "https://registry.npmjs.org/prisma/-/prisma-2.30.0.tgz"
   "version" "2.30.0"
