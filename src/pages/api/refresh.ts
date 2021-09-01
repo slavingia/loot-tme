@@ -16,12 +16,12 @@ const api: NextApiHandler = async (_req, res) => {
   for (const user of usersToRefresh) {
     const bags = await getBagsInWallet(user.address.toLowerCase());
     const filteredBags = bags.filter(bag =>
-      bag.chest.toLowerCase().includes('book')
+      bag.weapon.toLowerCase().includes('book')
     );
     console.log(
       `${user.username} ${user.address} has ${
         filteredBags.length
-      } books: (${filteredBags.map(bag => bag.chest).join(', ')})`
+      } books: (${filteredBags.map(bag => bag.weapon).join(', ')})`
     );
     if (filteredBags.length == 0 && user.inServer) {
       await prisma.user.update({
@@ -40,7 +40,7 @@ const api: NextApiHandler = async (_req, res) => {
         data: {
           lastChecked: new Date(),
           inServer: true,
-          books: filteredBags.map(bag => bag.chest)
+          books: filteredBags.map(bag => bag.weapon)
         }
       });
     }
