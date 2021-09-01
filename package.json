@@ -16,7 +16,7 @@
     "next": "^11.1.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "transform": "^1.1.2",
+    "transform": "^0.0.9",
     "zustand": "^3.5.10"
   },
   "devDependencies": {
